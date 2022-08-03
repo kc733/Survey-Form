@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Car Owner Survey</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<h1 id="title">Car owner survey form</h1>
+			<p id="description">Please complete the survey if you own a car</p>
+		</header>
+		<section>
+			<form id="survey-form">
+				<label id="name-label">Your name: 
+					<input type="text" name="name" id="name" placeholder="John Smith" required/>
+				</label>
+				<label id="email-label">Email: 
+					<input type="email" name="email" id="email" placeholder="johnsmith@email.com" required/>
+				</label>
+				<hr>
+				<label id="number-label">Your car's year of manufacture: 
+					<input type="number" name="number" id="number" min="1950" max="2022" placeholder="1" required/>
+				</label>
+				<hr>
+				<select id="dropdown" required>
+					<option value="">Select your car's brand</option>
+					<option value="1">Tesla</option>
+					<option value="2">Mazda</option>
+					<option value="3">BMW</option>
+					<option value="4">Subaru</option>
+					<option value="5">Porsche</option>
+					<option value="6">Honda</option>
+					<option value="7">Seat</option>
+					<option value="8">Toyota</option>
+					<option value="9">Audi</option>
+					<option value="10">Volkswagen</option>
+				</select>
+				<hr>
+				<div>
+					<label id="car-engine">Is your car...
+						<hr>
+						<input type="radio" name="engine-placement" value="front">Front-Engined 
+						<input type="radio" name="engine-placement" value="mid">Mid-Engined 
+						<input type="radio" name="engine-placement" value="rear">Rear-Engined
+					</label>
+				</div>
+				<hr>
+				<div>
+					<label>What would you want to change in your car?
+						<input type="checkbox" name="" value="color">Color
+						<input type="checkbox" name="" value="engine">Engine
+						<input type="checkbox" name="" value="cockpit">Cockpit
+					</label>
+				</div>
+				<hr>
+				<div>
+					<label>Tell us how you bought your car:
+						<textarea></textarea>
+					</label>
+				</div>
+				<hr>
+				<button type="submit" id="submit">Submit</button>
+			</form>
+		</section>
+	</body>
+</html>
